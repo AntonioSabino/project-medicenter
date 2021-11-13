@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: ;
 }
 
 header {
@@ -35,4 +36,97 @@ nav a {
 nav a:hover {
   background-color: #39aae1;
   color: white;
+}
+
+#banner {
+  display: flex;
+  justify-content: center;
+  background-image: url('images/img1.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 670px;
+  
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.banner-headline {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.banner-headline h1 {
+  color: white;
+  font-size: 70px;
+  text-shadow: 0px 1px 0px black;
+  max-width: 350px;
+}
+
+.banner-headline h2 {
+  color: white;
+  font-size: 22px;
+  text-shadow: 0px 1px 0px black;
+  max-width: 350px;
+  margin-top: 30px;
+}
+
+.banner-options {
+  display: flex;
+  height: 210px;
+  width: 100%;
+}
+
+.banner-options div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 20px;
+}
+
+.banner-options h1 {
+  font-size: 25px;
+}
+
+.banner-options p {
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+.banner-options a {
+  width: 70px;
+  display: inline-block;
+  border: 1px solid white;
+  padding: 5px;
+  color: white;
+  text-decoration: none;
+}
+
+.box1 {
+  background-color: #39aae1;
+}
+
+.box2 {
+  background-color: #0079c7;
+}
+
+.box3 {
+  background-color: #2b4c99;
+  
+}
+
+.box3 div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  height: 25%;
+  border-bottom: 1px solid rgb(255, 255, 255);
 }
