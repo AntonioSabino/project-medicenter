@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  height: 120px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 990px;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul, nav li {
+  list-style: none;
+}
+
+nav a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #727272;
+}
+
+nav a:hover {
+  background-color: #39aae1;
+  color: white;
+}
