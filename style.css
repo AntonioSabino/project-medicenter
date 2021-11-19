@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 header {
@@ -251,4 +252,75 @@ footer .widget-title-text {
   margin-top: 30px;
   padding: 20px 0;
   width: 100%;
+}
+
+.menuMobile{
+  display: none;
+  width: 40px;
+  height: 40px;
+}
+
+.mm-line {
+  height: 3px;
+  background-color: #39aae1;
+}
+
+@media screen and (max-width: 600px) {
+  #banner {
+    height: auto;
+  }
+
+  .banner-headline {
+    padding: 20px;
+  }
+
+  .banner-headline h1 {
+    font-size: 55px;
+  }
+
+  .banner-headline h2 {
+    font-size: 17px;
+  }
+
+  .banner-options, .footer-boxes, .footer-area  {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  #geral section, #geral aside, .footer-boxes, .footer-area, .footer-copy {
+    padding: 20px;
+  }
+
+  .footer-copy {
+    padding: 20px;
+    margin: 0;
+  }
+
+  header {
+    height: auto;
+  }
+
+  header .container {
+    flex-direction: row;
+    padding: 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: white;
+  }
+
+  .menuMobile{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
 }
